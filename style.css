@@ -1,0 +1,10 @@
+* {
+  background-color: rgb(125, 22, 235);
+  font-family: SpecialGothic;
+}
+@font-face {
+  font-family: SpecialGothic;
+  src: url(fonts/SpecialGothicExpandedOne-Regular.tff);
+  font-style: normal;
+  font-weight: normal;
+}
