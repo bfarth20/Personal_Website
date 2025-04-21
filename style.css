@@ -17,6 +17,12 @@ main {
   margin-right: 20px;
   padding: 15px;
   background-color: rgb(0, 87, 87);
+  box-shadow: 0px 10px 10px 10px #888888;
+}
+
+img {
+  margin: 20px;
+  box-shadow: 0px 0px 5px 5px #888888;
 }
 
 /* Header for all pages*/
@@ -51,9 +57,12 @@ header {
 }
 .page-nav a {
   text-decoration: none;
+  padding: 10px;
 }
 .page-nav :hover {
-  color: red;
+  background-color: rgb(130, 8, 167);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px #888888;
 }
 
 /*home page styles*/
@@ -65,6 +74,11 @@ header {
 
 .home-text {
   font-size: 30px;
+}
+
+.home-text h1 {
+  padding-bottom: 20px;
+  border-bottom: 3px solid rgb(167, 163, 163);
 }
 
 #home-image {
@@ -97,6 +111,9 @@ header {
 /*styles for about and portfolio pages*/
 
 .about-topics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-top: solid 2px white;
   padding-bottom: 20px;
 }
@@ -104,13 +121,16 @@ header {
 .about-content {
   display: flex;
   gap: 20px;
+  width: 80vw;
 }
 
 .about-topics h2 {
+  align-self: flex-start;
   font-size: 30px;
   background-color: blueviolet;
   border-radius: 5px;
   padding: 5px;
+  box-shadow: 0px 0px 2px 2px #888888;
 }
 
 .about-content p {
@@ -124,6 +144,9 @@ header {
 /*styles for contact submission*/
 
 #contact-title {
+  background-color: rgb(98, 24, 166);
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 3px #aba3a3;
   text-align: center;
 }
 
@@ -148,6 +171,7 @@ header {
 
 input {
   color: rgb(10, 10, 10);
+  box-shadow: 0px 0px 2px 2px #aba3a3;
 }
 
 @font-face {
@@ -170,6 +194,9 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .about-topics h2 {
+    align-self: center;
   }
   #contact-form {
     display: flex;
