@@ -1,7 +1,96 @@
 * {
-  background-color: rgb(125, 22, 235);
   font-family: SpecialGothic;
+  color: aliceblue;
 }
+
+body {
+  background-color: rgb(85, 20, 146);
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  background-color: rgb(63, 60, 60);
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  background-color: rgb(63, 60, 60);
+}
+
+.header h2 {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.page-nav {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(63, 60, 60);
+}
+.page-nav a {
+  text-decoration: none;
+}
+.page-nav :hover {
+  color: red;
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+  background-color: rgb(0, 87, 87);
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home-image {
+  margin-right: 40px;
+  width: 300px;
+}
+
+.social-media-links {
+  position: sticky;
+  bottom: 0;
+  width: 100vw;
+  padding: 10px;
+  background-color: rgb(63, 60, 60);
+  display: flex;
+  justify-content: space-around;
+}
+.social-media-links img {
+  height: 75px;
+}
+
+.about-topics {
+  border-top: solid 2px white;
+  padding-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  gap: 20px;
+}
+
+#about-image-1 {
+  width: 200px;
+}
+
 @font-face {
   font-family: SpecialGothic;
   src: url(fonts/SpecialGothicExpandedOne-Regular.tff);
