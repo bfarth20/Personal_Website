@@ -12,6 +12,15 @@ li {
   list-style-type: none;
 }
 
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+  background-color: rgb(0, 87, 87);
+}
+
+/* Header for all pages*/
+
 header {
   background-color: rgb(63, 60, 60);
   margin: 0;
@@ -47,22 +56,30 @@ header {
   color: red;
 }
 
-main {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 15px;
-  background-color: rgb(0, 87, 87);
-}
+/*home page styles*/
 
 .home-content {
   display: flex;
   justify-content: space-between;
 }
 
+.home-text {
+  font-size: 30px;
+}
+
 #home-image {
   margin-right: 40px;
   width: 300px;
 }
+
+#quote {
+  font-size: 40px;
+  margin: 70px;
+  text-align: center;
+  font-style: italic;
+}
+
+/*footer style for all pages*/
 
 .social-media-links {
   position: sticky;
@@ -77,6 +94,8 @@ main {
   height: 75px;
 }
 
+/*styles for about and portfolio pages*/
+
 .about-topics {
   border-top: solid 2px white;
   padding-bottom: 20px;
@@ -87,8 +106,48 @@ main {
   gap: 20px;
 }
 
+.about-topics h2 {
+  font-size: 30px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.about-content p {
+  font-size: 18px;
+}
+
 #about-image-1 {
   width: 200px;
+}
+
+/*styles for contact submission*/
+
+#contact-title {
+  text-align: center;
+}
+
+#contact-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 50px;
+}
+
+#input-name {
+  width: 100px;
+}
+
+#input-email {
+  width: 400px;
+}
+
+#input-comments {
+  width: 700px;
+}
+
+input {
+  color: rgb(10, 10, 10);
 }
 
 @font-face {
@@ -96,4 +155,31 @@ main {
   src: url(fonts/SpecialGothicExpandedOne-Regular.tff);
   font-style: normal;
   font-weight: normal;
+}
+
+@media screen and (max-width: 625px) {
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-text {
+    text-align: center;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #input-email {
+    width: 80vw;
+  }
+  #input-comments {
+    width: 80vw;
+  }
 }
