@@ -1,0 +1,212 @@
+* {
+  font-family: SpecialGothic;
+  color: aliceblue;
+}
+
+body {
+  background-color: rgb(85, 20, 146);
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+  background-color: rgb(0, 87, 87);
+  box-shadow: 0px 10px 10px 10px #888888;
+}
+
+img {
+  margin: 20px;
+  box-shadow: 0px 0px 5px 5px #888888;
+}
+
+/* Header for all pages*/
+
+header {
+  background-color: rgb(63, 60, 60);
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  background-color: rgb(63, 60, 60);
+}
+
+.header h2 {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.page-nav {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(63, 60, 60);
+}
+.page-nav a {
+  text-decoration: none;
+  padding: 10px;
+}
+.page-nav :hover {
+  background-color: rgb(130, 8, 167);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px #888888;
+}
+
+/*home page styles*/
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-text {
+  font-size: 30px;
+}
+
+.home-text h1 {
+  padding-bottom: 20px;
+  border-bottom: 3px solid rgb(167, 163, 163);
+}
+
+#home-image {
+  margin-right: 40px;
+  width: 300px;
+}
+
+#quote {
+  font-size: 40px;
+  margin: 70px;
+  text-align: center;
+  font-style: italic;
+}
+
+/*footer style for all pages*/
+
+.social-media-links {
+  position: sticky;
+  bottom: 0;
+  width: 100vw;
+  padding: 10px;
+  background-color: rgb(63, 60, 60);
+  display: flex;
+  justify-content: space-around;
+}
+.social-media-links img {
+  height: 75px;
+}
+
+/*styles for about and portfolio pages*/
+
+.about-topics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: solid 2px white;
+  padding-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  gap: 20px;
+  width: 80vw;
+}
+
+.about-topics h2 {
+  align-self: flex-start;
+  font-size: 30px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 2px 2px #888888;
+}
+
+.about-content p {
+  font-size: 18px;
+}
+
+#about-image-1 {
+  width: 200px;
+}
+
+/*styles for contact submission*/
+
+#contact-title {
+  background-color: rgb(98, 24, 166);
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 3px #aba3a3;
+  text-align: center;
+}
+
+#contact-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 50px;
+}
+
+#input-name {
+  width: 100px;
+}
+
+#input-email {
+  width: 400px;
+}
+
+#input-comments {
+  width: 700px;
+}
+
+input {
+  color: rgb(10, 10, 10);
+  box-shadow: 0px 0px 2px 2px #aba3a3;
+}
+
+@font-face {
+  font-family: SpecialGothic;
+  src: url(fonts/SpecialGothicExpandedOne-Regular.tff);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 625px) {
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-text {
+    text-align: center;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-topics h2 {
+    align-self: center;
+  }
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #input-email {
+    width: 80vw;
+  }
+  #input-comments {
+    width: 80vw;
+  }
+}
